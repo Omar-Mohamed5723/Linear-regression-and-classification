@@ -23,6 +23,16 @@ Predicting violent crime rates from socio-economic features using regularised re
 | Ridge Regression | 0.717 | 0.1431 |
 | Lasso Regression | 0.701 | 0.1404 |
 
+![RMSE vs Lambda curve for Ridge regression (Figure 1)](assets/ridge_lambda.png)
+
+
+
+![RMSE vs Lambda curve for Lasso (Figure 2)](assets/lasso_lambda.png)
+
+
+
+![QQ-plot, histogram, and residuals plot for linear regression (Figure 3)](assets/linear_residuals.png)
+
 **Key findings:**
 - Linear regression achieved the highest R² but showed non-constant error variance (heteroscedasticity) in residual plots, suggesting fragile generalisation.
 - Ridge (λ = 0.00222) and Lasso (λ = 1.93×10⁻⁶) both improved prediction stability on the validation set.
@@ -49,6 +59,9 @@ Classifying tabular data using three classical ML models, tuned via grid search.
 - KNN performed well on dense regions but is sensitive to local noise.
 - Random Forest was the most interpretable and least prone to overfitting due to depth-limiting.
 
+
+![Confusion matrix for unaugmented CDNN (Figure 9)](assets/svm_confusion.png)
+
 ---
 
 ## Task 3 – Image Classification with DCNN
@@ -68,6 +81,11 @@ Input (28×28×1)
 Trained with Adam optimizer, sparse categorical crossentropy, batch size 64, 45 epochs.
 
 ### Results
+
+![Confusion matrix for SVM classifier (Figure 7)](assets/dcnn_confusion.png
+)
+
+
 
 | Model | Train Accuracy | Test Accuracy | Macro F1 |
 |---|---|---|---|
@@ -90,19 +108,3 @@ Trained with Adam optimizer, sparse categorical crossentropy, batch size 64, 45 
 
 ---
 
-## 📸 Suggested Images for This Repo
-
-Add these to an `assets/` folder:
-
-| File | What to include |
-|---|---|
-| `assets/ridge_lambda.png` | RMSE vs Lambda curve for Ridge regression (Figure 1 from report) |
-| `assets/lasso_lambda.png` | RMSE vs Lambda curve for Lasso (Figure 2) |
-| `assets/linear_residuals.png` | QQ-plot, histogram, and residuals plot for linear regression (Figure 3) |
-| `assets/svm_confusion.png` | Confusion matrix for SVM classifier (Figure 7) |
-| `assets/dcnn_confusion.png` | Confusion matrix for unaugmented CDNN (Figure 9) |
-
-Reference them in the README:
-```markdown
-![Ridge Lambda Curve](assets/ridge_lambda.png)
-```
