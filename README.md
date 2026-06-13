@@ -1,6 +1,6 @@
-# CAB420 – Machine Learning: Classical Models & CNN Baselines
+# Machine Learning: Classical Models & CNN Baselines
 
-> **Course:** CAB420 Machine Learning · Queensland University of Technology  
+
 > **Topics:** Regression · Classification · Convolutional Neural Networks
 
 ---
